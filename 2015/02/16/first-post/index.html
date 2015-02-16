@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>first post | Hathle Engineer Blog</title>
+  <title>Hello World | Hathle Engineer Blog</title>
   <meta name="description" content="" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -44,12 +44,9 @@
       </time>
     
 </span>
-    <h1 class="post-title">first post</h1>
+    <h1 class="post-title">Hello World</h1>
     <section class="post-content">
-      <h1 id="Hello_World!!">Hello World!!</h1>
-<p>テスト投稿です。</p>
-<p>このブログは静的サイトジェネレータHexoを使用しています。</p>
-<p>技術的な内容を記載していきたいと思います。</p>
+      <p>このブログは静的サイトジェネレータHexoを使用しています。<br>技術的な内容を記載していきたいと思います。</p>
 <hr>
 <p>Static Site Generatorsを見ると<br><a href="https://staticsitegenerators.net/" target="_blank" rel="external">https://staticsitegenerators.net/</a></p>
 <p>人気ランキング<br>1位 Jekyll<br>2位 Octopress</p>
@@ -76,26 +73,37 @@ hexo server -i 192.168.33.10
 
 <h2 id="確認">確認</h2>
 <p><a href="http://192.168.33.10:4000/" target="_blank" rel="external">http://192.168.33.10:4000/</a></p>
-<p>あっという間にブログができたのではないでしょうか！！</p>
-<p>直感的にJeykyllよりビルドが早くて軽い感じがします。</p>
+<p>あっという間にブログができたのではないでしょうか！！<br>直感的にJeykyllよりビルドが早くて軽い感じがします。</p>
 <h2 id="テーマ変更">テーマ変更</h2>
 <p>好きなテーマを選びます。<br><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">https://github.com/hexojs/hexo/wiki/Themes</a></p>
 <pre>
-git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+git clone https://github.com/kywk/hexo-theme-casper.git themes/casper
 //_config.yml修正
-theme: yilia
+theme: casper
 hexo server -i 192.168.33.10
 </pre>
 
+<h2 id="ページ公開">ページ公開</h2>
+<p>GitHubでリポジトリを新規作成します。<br>_config.ymlを修正します。</p>
+<pre>
+//_config.yml
+deploy:
+  type: github
+  repository: git@github.com:<ユーザ名>/<リポジトリ名>.git
+  branch: gh-pages
+</リポジトリ名></ユーザ名></pre>
+
+<pre>
+hexo deploy
+</pre>
+
 <p>簡単なので是非試してみて下さい。</p>
-<hr>
-<p>みたいな感じで書いていきます。</p>
 
     </section>
     <footer class="post-footer">
       <section class="author">
     <h4>hathle</h4>
-    <p>A designer, developer and entrepreneur. Spends his time travelling the world with a bag of kites. Likes journalism and publishing platforms.</p>
+    <p>Athlete Engineer</p>
 </section>
       <section class="share">
     <h4>Share this post</h4>
